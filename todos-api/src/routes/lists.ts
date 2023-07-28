@@ -1,6 +1,6 @@
 import express from "express";
 
-import { findAll, findById } from "../lists/repository/lists-repository";
+import { findAll, findById } from "../lists/service/lists-service";
 
 const router = express.Router();
 
