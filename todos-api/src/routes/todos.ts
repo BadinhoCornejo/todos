@@ -1,15 +1,15 @@
-import express, { Request } from "express";
+import express from "express";
 
+import { checkSchema, param } from "express-validator";
+import { validateRequest } from "../common";
 import { getError } from "../common/utils";
 import {
-  addTodo,
-  deleteTodo,
-  findAll,
-  findById,
-  updateTodo,
+    addTodo,
+    deleteTodo,
+    findAll,
+    findById,
+    updateTodo,
 } from "../todos/service/todos-service";
-import { checkSchema, param, CustomValidator, Meta } from "express-validator";
-import { validateRequest } from "../common";
 
 const router = express.Router();
 
