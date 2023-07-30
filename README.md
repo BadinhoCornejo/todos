@@ -2,13 +2,13 @@
 
 API for Todos application.
 
-Test URL:  ec2-54-174-161-46.compute-1.amazonaws.com/api/v1/todos
+Test URL:  [ec2-54-174-161-46.compute-1.amazonaws.com/api/v1/todos](http://ec2-54-174-161-46.compute-1.amazonaws.com/api/v1/todos)
 
 ## Requests
 
 | Method | Params | Body | Response |
 |--------|--------|------|----------|
-|GET     |-   	  |-     |Array<Todo>|
+|GET     |-   	  |-     |Array of Todo|
 |GET     |id: Alphanumeric|-	|Todo|
 |POST     |-|name: string<br/> description: string<br/> status: PENDING or DONE	|id: string|
 |PUT     |id: Alphanumeric|name: string<br/> description: string<br/> status: PENDING or DONE	|-|
