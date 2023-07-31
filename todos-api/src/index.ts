@@ -8,8 +8,6 @@ import { healthCheckRouter } from "./routes/health-check";
 import { listsRouter } from "./routes/lists";
 import { todosRouter } from "./routes/todos";
 
-import "./config/firebase";
-
 const app = express();
 
 app.use(cors());
